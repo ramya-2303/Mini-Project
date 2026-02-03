@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVR ENTERPRISES</title>
+    <link rel="stylesheet" href="vvr.css">
+</head>
+<body>
+    <header>
+        <h1>VVR ENTERPRISES</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">about</a>
+            <a href="#">services</a>
+            <a href="#">testimonilas</a>
+            <a href="#">FAQ</a>
+            <a href="#">contact</a>
+        </nav>
+        <button id="darkModeToggle">🌙</button>
+    </header>
+        <section class="hero" id="hero">
+            <h2>Welcome to VVR ENTERPRISES</h2>
+            <P>your all time trusted partner in bussiness solution and professional services.</P>
+            <button onclick="showMessage()">Get started</button>
+         <p id="clock"></p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <div class="about-container">
+      <img src="vvr.jpg" alt="Our Office" />
+      <div>
+        <p>VVR Enterprises provides world-class business solutions, empowering clients through technology and innovation.</p>
+        <ul>
+          <li>10+ Years of Experience</li>
+          <li>200+ Satisfied Clients</li>
+          <li>100% Support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Consulting</h3>
+        <p>Professional business advice and strategic planning.</p>
+      </div>
+      <div class="card">
+        <h3>Solutions</h3>
+        <p>fire proofing, painting, interior designing, aluminium coating, primer coating.</p>
+      </div>
+      <div class="card">
+        <h3>Support</h3>
+        <p>24/7 customer assistance and maintenance services.</p>
+      </div>
+    </div>
+
+    <h3 class="center">Pricing Plans</h3>
+    <table>
+      <tr>
+        <th>Plan</th>
+        <th>Price</th>
+        <th>Features</th>
+      </tr>
+      <tr>
+        <td>Basic</td>
+        <td>$99</td>
+        <td>3 Services Included</td>
+      </tr>
+      <tr>
+        <td>Standard</td>
+        <td>$199</td>
+        <td>5 Services Included</td>
+      </tr>
+      <tr>
+        <td>Premium</td>
+        <td>$299</td>
+        <td>All Services Included</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>"VVR Enterprises transformed our business! Highly recommend."</p>
+    </div>
+    <div class="testimonial">
+      <p>"Exceptional service and great support throughout!"</p>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <h4>What industries do you serve?</h4>
+      <p class="answer">We serve IT, manufacturing, healthcare, and retail sectors.</p>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <h4>Do you offer 24/7 support?</h4>
+      <p class="answer">Yes, we offer round-the-clock technical and customer support.</p>
+    </div>
+  </section>
+
+  <section id="newsletter" class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form onsubmit="subscribeNewsletter(event)">
+      <input type="email" id="subscribeEmail" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="handleSubmit(event)">
+      <label for="name">Name:</label>
+      <input type="text" id="name"placeholder="Enter your name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+
+      <label>Preferred Contact:</label>
+      <input type="radio" name="call" value="email" checked /> Email
+      <input type="radio" name="call" value="phone" /> Phone<br><br>
+      <label for="services">Interested Service:</label>
+      <select id="services">
+        <option>Consulting</option>
+        <option>Solution</option>
+        <option>Support</option>
+        <option>maintenance</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VVR Enterprises. All Rights Reserved.</p>
+    <p>Follow us:
+      <a href="#">LinkedIn</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Facebook</a>|
+      <a href="#">instagram</a>
+    </p>
+  </footer>
+
+  <script src="vvr.js"></script>
+</body>
+</html>
