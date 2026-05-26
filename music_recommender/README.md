@@ -57,7 +57,3 @@ python music_recommender.py
 ![Output](output.png)
 
 
-
-## Author
-
-Ramya Reddy
